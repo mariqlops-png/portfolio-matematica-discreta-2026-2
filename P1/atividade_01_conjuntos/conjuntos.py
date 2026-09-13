@@ -31,3 +31,24 @@ print(f"\nConjunto A = {A}")
 print(f"Conjunto B = {B}")
 
 #---------------------------------------------------
+#União
+#---------------------------------------------------
+uniao = set()
+for elemt in A:
+    uniao.add(elemt)
+for elemt in B:
+    uniao.add(elemt)
+
+print(f"\nA união B: {uniao}")
+
+#---------------------------------------------------
+#interseção
+#---------------------------------------------------
+interseção = set()
+for elemt in A:
+    if elemt in B:
+        interseção.add(elemt)
+
+print(f"A Interseção B = {intersecao}")
+#----------------------------------------------------
+
