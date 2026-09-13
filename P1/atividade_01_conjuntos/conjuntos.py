@@ -44,11 +44,39 @@ print(f"\nA união B: {uniao}")
 #---------------------------------------------------
 #interseção
 #---------------------------------------------------
-interseção = set()
+intersecao = set()
 for elemt in A:
     if elemt in B:
-        interseção.add(elemt)
+        intersecao.add(elemt)
 
 print(f"A Interseção B = {intersecao}")
 #----------------------------------------------------
+#Diferença
+#----------------------------------------------------
+diferenca_ab = set()
+for elemt in A:
+    if elemt not in B:
+        diferenca_ab.add(elemt)
 
+diferenca_ba = set()
+for elemt in B:
+    if elemt not in A:
+        diferenca_ba.add(elemt)
+        
+if diferenca_ab:
+    print(f"A - B = {diferenca_ab}")
+else:
+    print("A - B = vazio")
+
+if diferenca_ba:
+    print(f"B - A = {diferenca_ba}")
+else:
+    print("B - A = vazio")
+#----------------------------------------------------
+#Cardinalidades
+#----------------------------------------------------
+print(f"\nCardinalidade de A: {len(A)}")
+print(f"Cardinalidade de B: {len(B)}")
+print(f"Cardinalidade da união de A e B: {len(uniao)}")
+print(f"Cardinalidade da interseção de A e B: {len(intersecao)}")
+#----------------------------------------------------
