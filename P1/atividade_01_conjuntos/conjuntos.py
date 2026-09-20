@@ -9,6 +9,8 @@ print("Disciplina: Estruturas Matemáticas para Computação")
 print("Turno: Matutino ")
 print("-" * 20)
 #-----------------------------------------------------
+#Entradas dos elementos dos conjuntos
+#-----------------------------------------------------
 
 entrada_a = input("\n Digite os números do conjunto A separados por espaço: ")
 entrada_b = input("Digite os números do conjunto B separados por espaço: ")
