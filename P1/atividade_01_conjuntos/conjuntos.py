@@ -1,7 +1,10 @@
-#Atividade 01 Conjuntos.
-#------------------------------------------------------
-#Cabeçalho
-#------------------------------------------------------
+# ==================================================
+# PORTFÓLIO DE PROGRAMAÇÃO MATEMÁTICA
+# Disciplina: Estruturas Matemáticas para Computação
+# Atividade 1 - Teoria dos Conjuntos
+# ==================================================
+# Cabeçalho
+#-----------------------------------------------------
 print("-" * 20)
 print("Nome: Mariana Queiroz Lopes ")
 print("Matrícula: 2622130019 ")
