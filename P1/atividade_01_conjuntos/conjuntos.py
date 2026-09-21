@@ -30,8 +30,12 @@ print(f"\nUnião de A e B (A ∪ B): {uniao}")
 #---------------------------------------------------
 
 intersecao = A & B
-print(f"Interseção de A e B (A ∩ B): {intersecao}")
 
+if intersecao == set():
+    print("\nInterseção de A e B (A ∩ B): ∅")
+else:
+    print(f"\nInterseção de A e B (A ∩ B): {intersecao}")
+    
 #----------------------------------------------------
 #Diferença
 #----------------------------------------------------
@@ -52,7 +56,7 @@ cardintersecao = len(intersecao)
 
 print(f"\nCardinalidade de A: {cardA}")
 print(f"Cardinalidade de B: {cardB}")
-print(f"Cardinalidade de B: {carduniao}")
+print(f"Cardinalidade de A união B: {carduniao}")
 print(f"Cardinalidade de A interseção B: {cardintersecao}")
 
 #----------------------------------------------------
@@ -70,11 +74,15 @@ for elemento in A:
 
     partesA = partesA + novas_partes
 
-print(f"\nConjunto das partes de A: {partesA}")
+for parte in partesA:
+    if parte == set():
+        print("\n∅")
+    else:
+        print(parte)
 
 cardPartesA = len(partesA)
 
-print(f"Cardinalidade do conjunto das partes de A: {cardPartesA}")
+print(f"Conjunto das partes de A P(A): {cardPartesA}")
 
 #----------------------------------------------------
 #Conjunto das partes de B
@@ -91,19 +99,45 @@ for elemento in B:
 
     partesB = partesB + novas_partes
 
-print(f"\nConjunto das partes de B: {partesB}")
+for parte in partesA:
+    if parte == set():
+        print("\n∅")
+    else:
+        print(parte)
 
 cardPartesB = len(partesB)
 
-print(f"Cardinalidade do conjunto das partes de B: {cardPartesB}")
+print(f"Conjunto das partes de B P(B): {cardPartesB}")
+
+#--------------------------------------------------
+#Inclusão
+#--------------------------------------------------
+AemB = A.issubset(B)
+BemA = B.issubset(A)
+
+print(f"\nA está contido em B (A ⊆ B): {AemB}")
+print(f"B está contido em A (B ⊆ A): {BemA}")
 
 #----------------------------------------------------
 #Produto cartesiano AxB 
 #---------------------------------------------------
+produto = []
 
+for elementoA in A:
+    for elementoB in B:
+        produto.append((elementoA, elementoB))
+
+print(f"\nProduto cartesiano A x B: {produto}")
 # --------------------------------------------------
-# Partição
+# Partição exemplo
 # --------------------------------------------------
+listaA = list(A)
+metade = len(listaA) // 2
+
+parte1 = set(listaA[:metade])
+parte2 = set(listaA[metade:])
+
+print(f"\nExemplo de partição de A: {parte1} e {parte2}")
 
 #---------------------------------------------------
 
