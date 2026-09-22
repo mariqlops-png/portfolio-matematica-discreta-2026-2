@@ -43,6 +43,7 @@ B = 18
 
 O programa apresenta:
 Divisão inteira (DIV), resto da divisão (MOD), passo a passo do Algoritmo de Euclides, Máximo Divisor Comum (MDC) e Mínimo Múltiplo Comum (MMC).
+
 ---
 
 ## 📁 Estrutura do Repositório
