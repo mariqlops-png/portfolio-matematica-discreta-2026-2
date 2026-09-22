@@ -3,8 +3,6 @@
 # Disciplina: Estruturas Matemáticas para Computação
 # Atividade 1 - Teoria dos Conjuntos
 # ==================================================
-# Atividade 01 Conjuntos
-#------------------------------------------------------
 # Cabeçalho
 #------------------------------------------------------
 print("\nCABEÇALHO")
