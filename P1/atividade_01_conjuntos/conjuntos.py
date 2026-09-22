@@ -3,9 +3,11 @@
 # Disciplina: Estruturas Matemáticas para Computação
 # Atividade 1 - Teoria dos Conjuntos
 # ==================================================
+# Atividade 01 Conjuntos
+#------------------------------------------------------
 # Cabeçalho
 #------------------------------------------------------
-
+print("\nCABEÇALHO")
 print("--------------------------------------------------")
 print("Nome: Mariana Queiroz Lopes")
 print("Matrícula: 2622130019")
@@ -16,6 +18,7 @@ print("--------------------------------------------------")
 #------------------------------------------------------
 # Entrada dos elementos do conjunto
 #------------------------------------------------------
+print("\nENTRADA DOS ELEMENTOS")
 
 A = set(input("\nDigite os números de A (separados por espaço): ").split())
 B = set(input("Digite os números de B (separados por espaço): ").split())
@@ -23,9 +26,12 @@ B = set(input("Digite os números de B (separados por espaço): ").split())
 print(f"Conjunto A: {A}")
 print(f"Conjunto B: {B}")
 
+print("--------------------------------------------------")
+
 #------------------------------------------------------
 # União
 #------------------------------------------------------
+print("\nUNIÃO")
 
 uniao = set()
 
@@ -37,10 +43,13 @@ for elemento in B:
         uniao.add(elemento)
 
 print(f"\nUnião de A e B (A ∪ B): {uniao}")
+print("--------------------------------------------------")
 
 #------------------------------------------------------
 # Interseção
 #------------------------------------------------------
+print("\nINTERSEÇÃO")
+
 
 intersecao = set()
 
@@ -53,9 +62,13 @@ if intersecao == set():
 else:
     print(f"\nInterseção de A e B (A ∩ B): {intersecao}")
 
+print("--------------------------------------------------")
+
 #------------------------------------------------------
 # Diferença
 #------------------------------------------------------
+print("\nDIFERENÇA")
+
 
 difeAB = set()
 
@@ -79,9 +92,13 @@ if difeBA == set():
 else:
     print(f"\nDiferença de B e A (B - A): {difeBA}")
 
+print("--------------------------------------------------")
+
 #------------------------------------------------------
 # Cardinalidades
 #------------------------------------------------------
+print("\nCARDINALIDADES")
+
 
 cardA = len(A)
 cardB = len(B)
@@ -93,9 +110,13 @@ print(f"Cardinalidade de B: {cardB}")
 print(f"Cardinalidade de A união B: {carduniao}")
 print(f"Cardinalidade de A interseção B: {cardintersecao}")
 
+print("--------------------------------------------------")
+
 #------------------------------------------------------
 # Conjunto das partes de A
 #------------------------------------------------------
+print("\nCONJUNTO DAS PARTES DE A ")
+
 
 partesA = [set()]
 
@@ -121,9 +142,12 @@ cardPartesA = len(partesA)
 
 print(f"Cardinalidade de P(A): {cardPartesA}")
 
+print("--------------------------------------------------")
+
 #------------------------------------------------------
 # Conjunto das partes de B
 #------------------------------------------------------
+print("\nCONJUNTO DAS PARTES DE B ")
 
 partesB = [set()]
 
@@ -149,9 +173,12 @@ cardPartesB = len(partesB)
 
 print(f"Cardinalidade de P(B): {cardPartesB}")
 
+print("--------------------------------------------------")
+
 #------------------------------------------------------
 # Inclusão
 #------------------------------------------------------
+print("\nINCLUSÃO ")
 
 AemB = True
 
@@ -168,9 +195,12 @@ for elemento in B:
 print(f"\nA está contido em B (A ⊆ B): {AemB}")
 print(f"B está contido em A (B ⊆ A): {BemA}")
 
+print("--------------------------------------------------")
+
 #------------------------------------------------------
 # Produto cartesiano AxB
 #------------------------------------------------------
+print("\nPRODUTO CARTESIANO ")
 
 produto = []
 
@@ -180,17 +210,23 @@ for elementoA in A:
 
 print(f"\nProduto cartesiano A x B: {produto}")
 
-#------------------------------------------------------
+print("--------------------------------------------------")
+
+# ------------------------------------------------------
 # Partição exemplo
-#------------------------------------------------------
-
+# ------------------------------------------------------
 listaA = list(A)
-metade = len(listaA) // 2
 
-parte1 = set(listaA[:metade])
-parte2 = set(listaA[metade:])
-
-print(f"\nExemplo de partição de A: {parte1} e {parte2}")
+if len(listaA) < 2:
+    print(
+        f"\nExemplo de partição de A: {set(listaA)} (Conjuntos com menos de 2 elementos não podem ser divididos em subconjuntos não vazios)."
+    )
+else:
+    metade = len(listaA) // 2
+    parte1 = set(listaA[:metade])
+    parte2 = set(listaA[metade:])
+    print(f"\nExemplo de partição de A: {parte1} e {parte2}")
+print("--------------------------------------------------")
 
 #------------------------------------------------------
 
