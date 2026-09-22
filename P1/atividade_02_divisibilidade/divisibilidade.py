@@ -30,7 +30,7 @@ print(f"Divisor: {num_b}")
 numero_a_original = num_a
 numero_b_original = num_b
 
-print("--------------------------------------------------")
+print("\n--------------------------------------------------")
 
 # ------------------------------------------------------
 # DIV e MOD
@@ -43,12 +43,12 @@ mod = num_a % num_b
 print(f"\nDIV (quociente da divisão) = {div}")
 print(f"MOD (resto da divisão) = {mod}")
 
-print("--------------------------------------------------")
+print("\n--------------------------------------------------")
 
 # ------------------------------------------------------
 # Algoritmo de Euclides e MDC
 # ------------------------------------------------------
-print("\nPASSO A PASSO - ALGORITMO DE EUCLIDES E MDC")
+print("\nPASSO A PASSO - ALGORITMO DE EUCLIDES E MDC (máximo divisor comum)")
 
 while num_b != 0:
     resto = num_a % num_b
@@ -62,18 +62,22 @@ while num_b != 0:
 mdc = num_a
 print(f"\nMDC (máximo divisor comum) = {mdc}")
 
-print("--------------------------------------------------")
+print(f"\nMDC É definido pelo ultímo resto não nulo do algoritimo de euclides.")
+
+print("\n--------------------------------------------------")
 
 # ------------------------------------------------------
 # MMC (mínimo múltiplo comum)
 # ------------------------------------------------------
-print("\nMMC")
+print("\nMMC (mínimo múltiplo comum)")
 
 mmc = (numero_a_original * numero_b_original) // mdc
 
+print("\nO MMC é definido pelo produto de a e b divídido pelo MDC(a,b)")
+
 print(f"\nMMC (mínimo múltiplo comum) = {mmc}")
 
-print("--------------------------------------------------")
+print("\n--------------------------------------------------")
 
 # ------------------------------------------------------
 
