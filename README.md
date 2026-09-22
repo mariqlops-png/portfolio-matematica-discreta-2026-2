@@ -1,22 +1,18 @@
-# Portfólio de Programação Matemática
+🧮 Portfólio de Programação Matemática
 
-Repositório destinado ao armazenamento das atividades desenvolvidas na disciplina de **Estruturas Matemáticas para Computação** (2026/2).
+Repositório destinado ao armazenamento e documentação das atividades desenvolvidas na disciplina de Estruturas Matemáticas para Computação.
 
----
-
-## 👤 Identificação do Aluno
-
-* **Nome:** Mariana Queiroz Lopes
-* **Matrícula:** 2622130019
-* **Disciplina:** Estruturas Matemáticas para Computação
-* **Curso:** Ciência da Computação
-* **Turno:** Matutino
+👤 Identificação do Aluno
+Nome: Mariana Queiroz Lopes
+Matrícula: 2622130019
+Disciplina: Estruturas Matemáticas para Computação
+Curso: Ciência da Computação
+Turno: Matutino
 
 ---
 
-## 📁 Estrutura do Repositório
+📁 ##Estrutura do Repositório
 
-```text
 portfolio-matematica-discreta-2026-2/
 │
 ├── README.md
@@ -29,10 +25,36 @@ portfolio-matematica-discreta-2026-2/
     └── atividade_02_divisibilidade/
         ├── divisibilidade.py
         └── documento_atividade_02.pdf
+---
+        
+🚀 Guia Rápido de Utilização
 
+Atividade 1 – Teoria dos Conjuntos
+Arquivo: P1/atividade_01_conjuntos/conjuntos.py
 
-🚀 Atividades Desenvolvidas🔹 Atividade 01: Teoria dos ConjuntosDiretório: P1/atividade_01_conjuntos/Descrição: Implementação manual de operações fundamentais sobre conjuntos numéricos.Funcionalidades:União, Interseção e Diferença ($A - B$ e $B - A$)Cardinalidade e PertinênciaConjunto das Partes e Cardinalidade das PartesExemplo de Partição e Produto Cartesiano ($A \times B$)Verificação manual de inclusão ($A \subseteq B$ e $B \subseteq A$) sem uso de issubset()Como Executar:Bashpython P1/atividade_01_conjuntos/conjuntos.py
-🔹 Atividade 02: Divisibilidade, MDC e MMCDiretório: P1/atividade_02_divisibilidade/Descrição: Aplicação prática dos conceitos da Teoria dos Números e Algoritmo de Euclides.Funcionalidades:Divisão Inteira (DIV) e Resto (MOD)Algoritmo de Euclides iterativo com exibição do passo a passo das divisõesCálculo manual do Máximo Divisor Comum (MDC) sem uso de math.gcd()Cálculo do Mínimo Múltiplo Comum (MMC)Como Executar:Bashpython P1/atividade_02_divisibilidade/divisibilidade.py
-🛠️ Tecnologias UtilizadasLinguagem: Python 3Ambiente: Terminal / CLI
-É só editar o arquivo `README.md` no seu GitHub, colar esse código exato e salvar. Vai fic
+Como utilizar:
+O programa solicita os elementos dos conjuntos A e B.
 
+Exemplo de entrada:
+
+A = 1 2 3 4
+
+B = 3 4 5 6
+
+O programa apresenta:
+União, interseção, diferenças, cardinalidades, conjunto das partes, partição, produto cartesiano e inclusão.
+
+Atividade 2 – Divisibilidade
+Arquivo: P1/atividade_02_divisibilidade/divisibilidade.py
+
+Como utilizar:
+O programa solicita dois números inteiros (dividendo e divisor).
+
+Exemplo de entrada:
+
+A = 48
+
+B = 18
+
+O programa apresenta:
+Divisão inteira (DIV), resto da divisão (MOD), passo a passo do Algoritmo de Euclides, Máximo Divisor Comum (MDC) e Mínimo Múltiplo Comum (MMC).
