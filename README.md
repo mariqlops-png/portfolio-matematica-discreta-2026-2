@@ -1,35 +1,20 @@
-🧮 Portfólio de Programação Matemática
+# 🧮 Portfólio de Programação Matemática
 
-Repositório destinado ao armazenamento e documentação das atividades desenvolvidas na disciplina de Estruturas Matemáticas para Computação.
-
-👤 Identificação do Aluno
-Nome: Mariana Queiroz Lopes
-Matrícula: 2622130019
-Disciplina: Estruturas Matemáticas para Computação
-Curso: Ciência da Computação
-Turno: Matutino
+Repositório destinado ao armazenamento e documentação das atividades desenvolvidas na disciplina de **Estruturas Matemáticas para Computação**.
 
 ---
 
-📁 ##Estrutura do Repositório
+## 👤 Identificação do Aluno
 
-portfolio-matematica-discreta-2026-2/
-│
-├── README.md
-│
-└── P1/
-    ├── atividade_01_conjuntos/
-    │   ├── conjuntos.py
-    │   └── documento_atividade_01.pdf
-    │
-    └── atividade_02_divisibilidade/
-        ├── divisibilidade.py
-        └── documento_atividade_02.pdf
+* **Nome:** Mariana Queiroz Lopes
+* **Matrícula:** 2622130019
+* **Disciplina:** Estruturas Matemáticas para Computação
+* **Curso:** Ciência da Computação
+* **Turno:** Matutino
+
 ---
-        
-🚀 Guia Rápido de Utilização
-
-Atividade 1 – Teoria dos Conjuntos
+## 🚀 Guia Rápido de Utilização
+* **Atividade 1 – Teoria dos Conjuntos**
 Arquivo: P1/atividade_01_conjuntos/conjuntos.py
 
 Como utilizar:
@@ -44,7 +29,7 @@ B = 3 4 5 6
 O programa apresenta:
 União, interseção, diferenças, cardinalidades, conjunto das partes, partição, produto cartesiano e inclusão.
 
-Atividade 2 – Divisibilidade
+* **Atividade 2 – Divisibilidade**
 Arquivo: P1/atividade_02_divisibilidade/divisibilidade.py
 
 Como utilizar:
@@ -58,3 +43,20 @@ B = 18
 
 O programa apresenta:
 Divisão inteira (DIV), resto da divisão (MOD), passo a passo do Algoritmo de Euclides, Máximo Divisor Comum (MDC) e Mínimo Múltiplo Comum (MMC).
+---
+
+## 📁 Estrutura do Repositório
+
+```text
+portfolio-matematica-discreta-2026-2/
+│
+├── README.md
+│
+└── P1/
+    ├── atividade_01_conjuntos/
+    │   ├── conjuntos.py
+    │   └── documento_atividade_01.pdf
+    │
+    └── atividade_02_divisibilidade/
+        ├── divisibilidade.py
+        └── documento_atividade_02.pdf
