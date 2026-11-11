@@ -6,6 +6,16 @@
 # Linguagem: Python
 # ==========================================================
 
+print("\n" + "=" * 55)
+print("PORTFOLIO DE PROGRAMACAO MATEMATICA")
+print("=" * 55)
+
+print("\nAluno:Mariana Queiroz Lopes")
+print("Matricula: 2622130019")
+print("Disciplina: Estruturas Matematicas para Computacao")
+print("Turno: matutino")
+
+
 # ----------------------------------------------------------
 # FUNCAO 1 - CALCULO DO MDC PELO ALGORITMO DE EUCLIDES
 # ----------------------------------------------------------
@@ -118,16 +128,6 @@ def calcular_inverso(numero, modulo):
 # ----------------------------------------------------------
 # PARTE A - VERIFICACAO DE CONGRUENCIA MODULAR
 # ----------------------------------------------------------
-
-print("\n" + "=" * 55)
-print("PORTFOLIO DE PROGRAMACAO MATEMATICA")
-print("=" * 55)
-
-print("\nAluno:Mariana Queiroz Lopes")
-print("Matricula: 2622130019")
-print("Disciplina: Estruturas Matematicas para Computacao")
-print("Turno: matutino")
-
 print("\n" + "=" * 55)
 print("PARTE A - VERIFICACAO DE CONGRUENCIA MODULAR")
 print("=" * 55)
